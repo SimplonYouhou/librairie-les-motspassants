@@ -1,0 +1,173 @@
+<!DOCTYPE html><html lang="fr"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1F4E5F",
+            "primary-dark": "#133743",
+            "terracotta": "#A64B00",
+            "cream-bg": "#FBF8F1",
+            "cream-card": "#FFFFFF",
+            "card-border": "#E5DFD3",
+            "text-dark": "#1E2A2E",
+            "text-muted": "#55646B"
+          },
+          fontFamily: {
+            "lora": ["Lora", "serif"],
+            "work": ["Work Sans", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      background-color: #F8F4EB;
+      -webkit-font-smoothing: antialiased;
+    }
+  </style>
+</head>
+<body class="bg-[#F8F4EB] text-text-dark font-work min-h-screen flex flex-col items-center">
+<!-- Header -->
+<header class="w-full bg-[#F8F4EB] border-b border-[#E8E1D5] py-3.5 px-4 sticky top-0 z-40">
+<div class="max-w-md mx-auto flex items-center justify-between">
+<!-- Logo brand -->
+<div class="flex items-center gap-2.5">
+<img src="https://lh3.googleusercontent.com/aida/ALJJyrA4JQKyHC7lv_5euOfYHRdlOlCUW83ssnMzxssDNvCxNCbdLzExN-ghCnxvFji4JmMX_hBtEA7CkELMRPG27T19rDL5ymJCVf_aXaC5XFjWIjV3DG3fMcnMLuDhr2ut-XljVdIy__Bfe2Zp753b0rbF3eKxe0jd8jOXzdJspyhy1nGM9U1Uf1JPjZDAdPa61zajJXk2MQiSZaM4SZl3U0Hw54Q9fIDaNGHB7iE8t51A" alt="Logo Les MotsPassants (LMP)" class="h-10 w-auto object-contain">
+<div class="flex flex-col">
+<span class="font-lora text-[22px] font-bold text-primary tracking-tight leading-none">LMP</span>
+<span class="text-[9px] font-semibold text-terracotta tracking-[0.14em] uppercase mt-0.5">NANTES • INDÉPENDANTE</span>
+</div>
+</div>
+<!-- Hamburger Menu Button -->
+<button aria-label="Menu" class="w-10 h-10 rounded-xl border border-[#D5CDC0] flex items-center justify-center text-primary bg-[#FBF8F1] active:scale-95 transition-transform shadow-xs">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="w-full max-w-md px-4 py-5 flex flex-col gap-5 flex-grow">
+<!-- 1. Hero Discovery Card -->
+<section class="bg-white rounded-[28px] border border-card-border overflow-hidden shadow-xs flex flex-col">
+<!-- Image with Pill Badge -->
+<div class="relative w-full h-56 bg-slate-200 overflow-hidden">
+<img alt="Rayonnages de la librairie Les MotsPassants à Nantes" class="w-full h-full object-cover object-center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvOHyw4d0M1skZNH93xi3NmP3gxzGazSraULmwlth1h_K78kD7MPI_NpHSQa0GKwf4hlr97D06TASnvWF5ipZyBDwSM0aOVO4itideWH_KpkP2qd7suECJ9-wqCnIF674RYjE_Zs-IAa__aqoO5j1KsQg2o1aaB_2n52QvbnMog9ekUIpD8n1fKkK-Ya4Pqt_ThHTaaVRs_Gr3ciIWjU-uH0rOBFmDVAYFRkViEFo">
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute top-3.5 left-3.5">
+<span class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-primary/95 text-white text-[10px] font-bold tracking-wider uppercase shadow-md backdrop-blur-xs">
+            LIBRAIRIE INDÉPENDANTE NANTAISE
+          </span>
+</div>
+</div>
+<!-- Content Under Image -->
+<div class="p-6 pt-5 flex flex-col items-center text-center">
+<h1 class="font-lora text-[22px] font-bold text-primary leading-snug tracking-tight max-w-[320px]">
+          Le charme du livre papier, la passion du conseil
+        </h1>
+<p class="text-[13px] text-text-muted leading-relaxed mt-2.5 max-w-[320px]">
+          Entre odeur de papier, étagères de chêne et conseils passionnés de nos libraires au cœur de Nantes. Flânez en rayon ou découvrez notre algorithme de recommandation.
+        </p>
+<!-- CTA Buttons Stack -->
+<div class="w-full flex flex-col items-center gap-2.5 mt-5">
+<!-- Button 1: Venir nous voir -->
+<a class="w-full max-w-[260px] h-[42px] rounded-full bg-primary text-white text-[11px] font-bold tracking-wider uppercase flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-all" href="#ou-nous-trouver">
+<span class="material-symbols-outlined text-[17px]">location_on</span>
+<span>VENIR NOUS VOIR</span>
+</a>
+<!-- Button 2: Je sais ce que je veux lire -->
+<a class="w-full max-w-[260px] h-[42px] rounded-full bg-white border border-primary text-primary text-[11px] font-bold tracking-wider uppercase flex items-center justify-center gap-2 shadow-xs active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-[17px]">explore</span>
+<span>JE SAIS CE QUE JE VEUX LIRE</span>
+</a>
+<!-- Button 3: Conseillez-moi -->
+<a class="w-full max-w-[260px] h-[42px] rounded-full bg-terracotta text-white text-[11px] font-bold tracking-wider uppercase flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-[17px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span>CONSEILLEZ-MOI</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 2. À propos & Localisation / Contact Card -->
+<section class="bg-white rounded-[28px] border border-card-border p-5 shadow-xs flex flex-col gap-5" id="ou-nous-trouver">
+<!-- 2 Columns Grid -->
+<div class="grid grid-cols-2 gap-4">
+<!-- Col Left: À propos -->
+<div class="flex flex-col">
+<div class="inline-block self-start pb-1 mb-2 border-b-2 border-terracotta">
+<h2 class="font-lora text-[15px] font-bold text-primary">À propos</h2>
+</div>
+<p class="text-[11px] text-text-muted leading-relaxed">
+<strong class="text-text-dark font-semibold">Les MotsPassants</strong> est une librairie indépendante et vivante au cœur de Nantes. Nous défendons une littérature curieuse, exigeante et chaleureuse pour tous les âges.
+          </p>
+</div>
+<!-- Col Right: Où nous trouver ? -->
+<div class="flex flex-col">
+<div class="inline-block self-start pb-1 mb-2 border-b-2 border-terracotta">
+<h2 class="font-lora text-[15px] font-bold text-primary">Où nous trouver ?</h2>
+</div>
+<div class="flex flex-col text-[11px] text-text-muted leading-snug space-y-1">
+<p class="font-bold text-text-dark">14 Rue de la Fosse,<br>44000 Nantes</p>
+<p class="text-text-dark font-medium pt-0.5">02 02 22 02 02</p>
+<p class="pt-0.5">Tram 1 (Arrêt Commerce) • Bouffay</p>
+<p class="text-[10px] text-text-muted/80 pt-0.5">Mardi - Samedi : 10h00 - 19h00</p>
+</div>
+</div>
+</div>
+<!-- Contact Buttons Section -->
+<div class="flex flex-col gap-2.5 pt-1">
+<!-- Main Contactez-nous button -->
+<a class="w-full h-[40px] rounded-lg border border-primary text-primary text-[11px] font-bold tracking-[0.14em] uppercase flex items-center justify-center active:scale-98 transition-transform" href="mailto:contact@lesmotspassants-nantes.fr">
+          CONTACTEZ — NOUS
+        </a>
+<!-- 2x2 Quick Links -->
+<div class="grid grid-cols-2 gap-2.5">
+<a class="h-10 rounded-xl border border-card-border bg-[#FDFCF9] flex items-center justify-center gap-1.5 text-text-dark text-[11px] font-medium hover:border-primary active:scale-95 transition-all" href="mailto:contact@lesmotspassants-nantes.fr">
+<span class="material-symbols-outlined text-[16px] text-primary">mail</span>
+<span>Email</span>
+</a>
+<a class="h-10 rounded-xl border border-card-border bg-[#FDFCF9] flex items-center justify-center gap-1.5 text-text-dark text-[11px] font-medium hover:border-primary active:scale-95 transition-all" href="#">
+<svg class="w-3.5 h-3.5 fill-primary" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+<span>Facebook</span>
+</a>
+<a class="h-10 rounded-xl border border-card-border bg-[#FDFCF9] flex items-center justify-center gap-1.5 text-text-dark text-[11px] font-medium hover:border-primary active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-[16px] text-primary">photo_camera</span>
+<span>Instagram</span>
+</a>
+<a class="h-10 rounded-xl border border-card-border bg-[#FDFCF9] flex items-center justify-center gap-1.5 text-text-dark text-[11px] font-medium hover:border-primary active:scale-95 transition-all" href="#">
+<span class="material-symbols-outlined text-[16px] text-primary">location_on</span>
+<span>Plan</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Clean Minimal Footer -->
+<footer class="w-full max-w-md mx-auto px-4 pt-4 pb-8 flex flex-col items-center text-center">
+<!-- Legal links -->
+<div class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-[11px] text-text-dark/80 leading-relaxed font-normal">
+<a class="hover:underline" href="#">Écoconception</a>
+<span>•</span>
+<a class="hover:underline" href="#">Accessibilité</a>
+<span>•</span>
+<a class="hover:underline" href="#">Gestion des cookies</a>
+<span>•</span>
+<a class="hover:underline" href="#">Mentions légales</a>
+<span>•</span>
+<a class="hover:underline" href="#">Politique de confidentialité</a>
+</div>
+<!-- Copyright -->
+<p class="text-[9.5px] text-text-muted mt-3 leading-normal max-w-xs">
+      © 2026 Les MotsPassants (LMP) • Librairie indépendante nantaise. Fait avec passion pour le livre.
+    </p>
+</footer>
+
+
+</body></html>
