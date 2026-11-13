@@ -34,6 +34,11 @@
       -webkit-font-smoothing: antialiased;
     }
   </style>
+    <script>
+  if (window.innerWidth >= 768) {
+    window.location.replace("index.html");
+  }
+</script>
 </head>
 <body class="bg-[#F8F4EB] text-text-dark font-work min-h-screen flex flex-col items-center">
 <!-- Header -->
@@ -167,6 +172,7 @@
 <p class="text-[9.5px] text-text-muted mt-3 leading-normal max-w-xs">
       © 2026 Les MotsPassants (LMP) • Librairie indépendante nantaise. Fait avec passion pour le livre.
     </p>
+    <a href="index.html?desktop=true">Afficher la version ordinateur</a>
 </footer>
 
 
